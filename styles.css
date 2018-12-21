@@ -3,16 +3,16 @@ h1{
 }
     
 .jumbotron{
-    background-image: url(../img/background.jpg);
+
     background-attachment: fixed;
 }
 #points{
-    visibility: hidden;
+    visibility: show;
     background-color: burlywood;
     height:300px;
 }
 #points p{
     text-align: center;
     transform: translate(0%,190%);
-    font-size: 40px;
+    font-size: 20px;
 }
