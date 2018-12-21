@@ -12,7 +12,7 @@ Mazimpaka M.Rose
 * ubuntu operating system
 
 ## Link to site
-https://karireamandine.github.io/Quiz-Board/
+https://mazimpakar.github.io/Quiz-Board/
 
 ## BDD
 In this quiz board one is encouraged to answer all the questions witout failure:
