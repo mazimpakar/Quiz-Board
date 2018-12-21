@@ -7,6 +7,7 @@ function check() {
     var questionSix = document.Quiz.questionSix.value;
     var questionSeven = document.Quiz.questionSeven.value;
     var questionEight = document.Quiz.questionEight.value;
+   
     var right = 0;
 
 
