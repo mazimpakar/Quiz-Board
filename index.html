@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles.css">
 
-    <title>Document</title>
+    <title>Quiz-Board</title>
     </head>
     <body>
         <div class="container">
@@ -18,18 +18,19 @@
                     <h1>Quiz Board</h1>
                     
                     <h2><em class="bg-success">Answer all questions about javaScript correctly</em></h2>
-                        <form>
-                        <div class="well">
-                                    <form id="Quiz" action="index.html" method="POST" name="Quiz">
+
+                        <form id="Quiz" action="index.html"  method="POST" name="Quiz">
+                             <div class="well">
+                                   
                                     <p><strong> 1.Inside which HTML element do we put the JavaScript?</strong></p>
                                     <br>
                                     <label><input type="radio" name="questionOne" id="mc" value="wrong">js</label><br>
                                     <label><input type="radio" name="questionOne" id="mc" value="correct">script</label><br>
                                     <label><input type="radio" name="questionOne" id="mc" value="wrong">JavaScript</label><br>
-                                    <input type="radio" name="questionOne" id="mc" value="wrong">Scriptin</label>g<br>
+                                    <label><input type="radio" name="questionOne" id="mc" value="wrong">Scriptin</label>g<br>
                                     
-                        </div> 
-                        <div class="well">
+                            </div> 
+                                  <div class="well">
                                 
                                     <p><strong> 2.Where is the correct place to insert a JavaScript?</strong></p>
                                     <br>
@@ -54,7 +55,7 @@
                                     <p><strong> 4.How do you create a function in JavaScript? </strong></p>
                                     <br>
                                     <label><input type="radio" name="questionFour" id="mc" value="correct">function myFunction()</label><br>
-                                    <label><input type="radio" name="questionFour" id="mc" value="wrong">None of these<br></label>
+                                    <label><input type="radio" name="questionFour" id="mc" value="wrong">None of these</label><br>
                                     <label><input type="radio" name="questionFour" id="mc" value="wrong"> function = myFunction()</label><br>
                                     <label><input type="radio" name="questionFour" id="mc" value="wrong">function:myFunction()</label><br>
                                         
@@ -90,7 +91,7 @@
                                     <label><input type="radio" name="questionEight" id="mc" value="wrong">None of these</label><br>
                                     <label><input type="radio" name="questionEight" id="mc" value="wrong">This is acomment</label><br>
                         </div>
-                        <input type="button" name="results" value="SUBMIT" id="button" class= "btn btn-danger"onClick="check();">
+                        <input type="button" name="results" value="SUBMIT" id="button" class= "btn btn-success" onClick="check();">
                         
                 </form>
 
@@ -99,7 +100,7 @@
             </div>
               
             <div id="points">
-            <p id="correctNumber" >HERE IS YOUR SCORE:</p>
+            <p id="correctNumber">HERE IS YOUR SCORE:</p>
     
         </div>
         
