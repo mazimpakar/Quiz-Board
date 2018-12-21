@@ -6,3 +6,13 @@ h1{
     background-image: url(../img/background.jpg);
     background-attachment: fixed;
 }
+#points{
+    visibility: hidden;
+    background-color: burlywood;
+    height:300px;
+}
+#points p{
+    text-align: center;
+    transform: translate(0%,190%);
+    font-size: 40px;
+}
