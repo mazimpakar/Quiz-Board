@@ -2,3 +2,7 @@ h1{
     text-align: center;
 }
     
+.jumbotron{
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+}
