@@ -6,7 +6,8 @@ function check() {
     var questionFive = document.Quiz.questionFive.value;
     var questionSix = document.Quiz.questionSix.value;
     var questionSeven = document.Quiz.questionSeven.value;
-    var questionEight = document.Quiz.questionEight.value;
+    var questionEight = document.Quiz.questionEight.value
+
    
     var right = 0;
 
@@ -25,21 +26,23 @@ function check() {
     };
     if (questionFive == "correct") {
         right = right + 5;
+
     };
-    if (questionSix == "correct"){
+    if( questionSix == "correct") {
         right = right + 5;
     };
-    if (questionSeven == "correct") {
+    if(questionSeven == "correct") {
         right = right + 5;
+
     };
-    if (questionEight == "correct") {
+    if(questionEight == "correct") {
         right = right + 5;
     };
 
 
 
     document.getElementById("points").style.visibility = "visible";
-    document.getElementById("correctNumber").innerHTML = "HERE IS YOUR SCORE: " + right + "/40" ;
+    document.getElementById("correctNumber").innerHTML = "HERE IS YOUR SCORE:" + right + "/40";
     $(".container").fadeOut();
 
 };
