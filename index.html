@@ -1,114 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-
-    <title>Quiz-Board</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="styles.css">
+            <title>Login</title>
     </head>
-    <body>
-        <div class="container">
-                <div class="jumbotton">
-                    <h1>Quiz Board</h1>
-                    
-                    <h2><em class="bg-success">Answer all questions about javaScript correctly</em></h2>
-
-                        <form id="Quiz" action="index.html"  method="POST" name="Quiz">
-                             <div class="well">
-                                   
-                                    <p><strong> 1.Inside which HTML element do we put the JavaScript?</strong></p>
-                                    <br>
-                                    <label><input type="radio" name="questionOne" id="mc" value="wrong">js</label><br>
-                                    <label><input type="radio" name="questionOne" id="mc" value="correct">script</label><br>
-                                    <label><input type="radio" name="questionOne" id="mc" value="wrong">JavaScript</label><br>
-                                    <label><input type="radio" name="questionOne" id="mc" value="wrong">Scriptin</label>g<br>
-                                    
-                            </div> 
-                                  <div class="well">
-                                
-                                    <p><strong> 2.Where is the correct place to insert a JavaScript?</strong></p>
-                                    <br>
-                                    <label><input type="radio" name="questionTwo" id="mc" value="wrong">The body section</label><br>
-                                    <label><input type="radio" name="questionTwo" id="mc" value="wrong">The head section</label><br>
-                                    <label><input type="radio" name="questionTwo" id="mc" value="wrong">None of these</label><br>
-                                    <label><input type="radio" name="questionTwo" id="mc" value="correct"> Both the head section and the body section are correct</label><br>
-                                
-                        </div>
-                        <div class="well">
-
-                            
-                                    <p><strong>3.JavaScript is the same as Java</strong></p>
-                                    <br>
-                                    <label><input type="radio" name="questionThree" id="mc" value="correct">False</label><br>
-                                    <label><input type="radio" name="questionThree" id="mc" value="wrong">True</label><br>
-                                    
-                        </div>
-                        <div class="well">
-                                
-
-                                    <p><strong> 4.How do you create a function in JavaScript? </strong></p>
-                                    <br>
-                                    <label><input type="radio" name="questionFour" id="mc" value="correct">function myFunction()</label><br>
-                                    <label><input type="radio" name="questionFour" id="mc" value="wrong">None of these</label><br>
-                                    <label><input type="radio" name="questionFour" id="mc" value="wrong"> function = myFunction()</label><br>
-                                    <label><input type="radio" name="questionFour" id="mc" value="wrong">function:myFunction()</label><br>
-                                        
-                        </div>
-                        <div class="well">
-                        
-                                    <p><strong> 5.How do you call a function named "myFunction"? </strong></p>
-                                    <br>
-                                    <label><input type="radio" name="questionFive" id="mc" value="correct">myFunction()</label><br>
-                                    <label><input type="radio" name="questionFive" id="mc" value="wrong">call function myFunction()</label><br>
-                                    <label><input type="radio" name="questionFive" id="mc" value="wrong">call myFunction()</label><br>
-                                    
-                        </div>
-                        <div class="well">
-                                    <p><strong> 6.How to write an IF statement in JavaScript?</strong></p>
-                                    <br>
-                                    <label><input type="radio" name="questionSix" id="mc" value="correct">if (i == 5)</label></br>
-                                    <label><input type="radio" name="questionSix" id="mc" value="wrong">if i = 5 then</label><br>
-                                    <label><input type="radio" name="questionSix" id="mc" value="wrong">if =5 </label><br>
-                                    <label><input type="radio" name="questionSix" id="mc" value="wrong">if == 5</label><br>
-                        </div>
-                        <div class="well">
-                                    <p><strong>7.How does a WHILE loop start?</strong></p>
-                                    <br>
-                                    <label><input type="radio" name="questionSeven" id="mc" value="correct"> while(i <=10)</label><br>
-                                    <label><input type="radio" name="questionSeven" id="mc" value="wrong">None of these</label><br>
-                                    <label><input type="radio" name="questionSeven" id="mc" value="wrong">while(i<=10;i++)</label><br>
-                                    <label><input type="radio" name="questionSeven" id="mc" value="wrong">while i = 1 to 10</label><br>
-                        </div>
-                        <div class="well">
-                                    <p><strong>8.How can you add a comment in a JavaScript?</strong></p>
-                                    <label><input type="radio" name="questionEight" id="mc" value="correct">//This is a comment</label><br>
-                                    <label><input type="radio" name="questionEight" id="mc" value="wrong">None of these</label><br>
-                                    <label><input type="radio" name="questionEight" id="mc" value="wrong">This is acomment</label><br>
-                        </div>
-                        <input type="button" name="results" value="SUBMIT" id="button" class= "btn btn-success" onClick="check();">
-                        
-                </form>
-
-                
-        
-            </div>
-              
-            <div id="points">
-            <p id="correctNumber">HERE IS YOUR SCORE:</p>
     
-        </div>
-        
-        </div>         
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-        <script src="scripts.js"></script>
+    <body>
+            <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <!------ Include the above in your HEAD tag ---------->
+    
+    
+    
+            <body id="LoginForm">
+            <div class="container">
+            <h1 class="form-heading">login Form</h1>
+            <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                <p><strong>Please enter your email and password</strong></p>
+                </div>
+                <form id="Login"  method="POST" action="form.html">
+            
+                        <div class="form-group">
+                
+                
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                
+                        </div>
+                
+                        <div class="form-group">
+                
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                
+                        </div>
+                        <div class="forgot">
+                        <a href="quiz.html">Forgot password?</a>
+                        </div>
+                    <button type="submit" class="btn btn-primary" ><a href="quiz.html">login</a></button>
+            
+                </form>
+            </div>
+            <p class="botton-text"> Designed by Mazimpaka M.Rose</p>
+            </div></div>
+    
+    
+            </body>
     </body>
 </html>
+    
+    
